@@ -1,0 +1,13 @@
+I:\LearningProject\Final_Project\DomainLayer\bin\Debug\net8.0\ByWay.DomainLayer.deps.json
+I:\LearningProject\Final_Project\DomainLayer\bin\Debug\net8.0\ByWay.DomainLayer.dll
+I:\LearningProject\Final_Project\DomainLayer\bin\Debug\net8.0\ByWay.DomainLayer.pdb
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\ByWay.DomainLayer.csproj.AssemblyReference.cache
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\ByWay.DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\ByWay.DomainLayer.AssemblyInfoInputs.cache
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\ByWay.DomainLayer.AssemblyInfo.cs
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\ByWay.DomainLayer.csproj.CoreCompileInputs.cache
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\ByWay.DomainLayer.dll
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\refint\ByWay.DomainLayer.dll
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\ByWay.DomainLayer.pdb
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\ref\ByWay.DomainLayer.dll
+I:\LearningProject\Final_Project\DomainLayer\obj\Debug\net8.0\ByWay.DomainLayer.sourcelink.json

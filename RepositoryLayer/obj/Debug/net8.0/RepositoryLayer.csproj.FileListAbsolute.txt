@@ -1,0 +1,17 @@
+I:\LearningProject\Final_Project\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.deps.json
+I:\LearningProject\Final_Project\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.runtimeconfig.json
+I:\LearningProject\Final_Project\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.dll
+I:\LearningProject\Final_Project\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.pdb
+I:\LearningProject\Final_Project\RepositoryLayer\bin\Debug\net8.0\DomainLayer.dll
+I:\LearningProject\Final_Project\RepositoryLayer\bin\Debug\net8.0\DomainLayer.pdb
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.AssemblyReference.cache
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfoInputs.cache
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfo.cs
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\Reposito.A0A61804.Up2Date
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.dll
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\refint\RepositoryLayer.dll
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.pdb
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.genruntimeconfig.cache
+I:\LearningProject\Final_Project\RepositoryLayer\obj\Debug\net8.0\ref\RepositoryLayer.dll

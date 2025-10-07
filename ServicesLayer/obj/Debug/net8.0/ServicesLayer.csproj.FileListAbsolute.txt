@@ -1,0 +1,17 @@
+I:\LearningProject\Final_Project\ServicesLayer\bin\Debug\net8.0\ServicesLayer.deps.json
+I:\LearningProject\Final_Project\ServicesLayer\bin\Debug\net8.0\ServicesLayer.dll
+I:\LearningProject\Final_Project\ServicesLayer\bin\Debug\net8.0\ServicesLayer.pdb
+I:\LearningProject\Final_Project\ServicesLayer\bin\Debug\net8.0\DomainLayer.dll
+I:\LearningProject\Final_Project\ServicesLayer\bin\Debug\net8.0\RepositoryLayer.dll
+I:\LearningProject\Final_Project\ServicesLayer\bin\Debug\net8.0\RepositoryLayer.pdb
+I:\LearningProject\Final_Project\ServicesLayer\bin\Debug\net8.0\DomainLayer.pdb
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\ServicesLayer.csproj.AssemblyReference.cache
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\ServicesLayer.GeneratedMSBuildEditorConfig.editorconfig
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\ServicesLayer.AssemblyInfoInputs.cache
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\ServicesLayer.AssemblyInfo.cs
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\ServicesLayer.csproj.CoreCompileInputs.cache
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\Services.2D1E3DF1.Up2Date
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\ServicesLayer.dll
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\refint\ServicesLayer.dll
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\ServicesLayer.pdb
+I:\LearningProject\Final_Project\ServicesLayer\obj\Debug\net8.0\ref\ServicesLayer.dll
