@@ -10,7 +10,7 @@ namespace ByWay.DomainLayer.Enrollment
 {
     public class FavoriteCourseEnrollment
     {
-        public string StudentId { get; set; }
+        public string UserName { get; set; }
         public Student Student { get; set; }
 
         public int CourseId { get; set; }

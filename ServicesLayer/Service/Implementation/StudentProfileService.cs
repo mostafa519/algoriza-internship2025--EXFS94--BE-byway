@@ -19,13 +19,13 @@ namespace ByWay.ServicesLayer.Service
 
         public async Task<StudentProfile> GetProfileAsync(string studentId)
         {
-            return await _context.StudentProfiles.FirstOrDefaultAsync(p => p.StudentId == studentId);
+            return await _context.StudentProfiles.FirstOrDefaultAsync(p => p.UserName == studentId);
         }
 
         public async Task<StudentProfile> CreateOrUpdateProfileAsync(StudentProfile profile)
         {
             var existingProfile = await _context.StudentProfiles
-                                                .FirstOrDefaultAsync(p => p.StudentId == profile.StudentId);
+                                                .FirstOrDefaultAsync(p => p.UserName == profile.UserName);
             if (existingProfile != null)
             {
                 // تحديث البيانات

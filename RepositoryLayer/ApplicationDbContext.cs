@@ -90,12 +90,12 @@ namespace ByWay.RepositoryLayer
                 .HasForeignKey(ic => ic.CategoryId);
             //////
             builder.Entity<FavoriteCourseEnrollment>()
-                .HasKey(fc => new { fc.StudentId, fc.CourseId });
+                .HasKey(fc => new { fc.UserName, fc.CourseId });
 
             builder.Entity<FavoriteCourseEnrollment>()
                 .HasOne(fc => fc.Student)
                 .WithMany(u => u.StudentFavoriteCourses)
-                .HasForeignKey(fc => fc.StudentId);
+                .HasForeignKey(fc => fc.UserName);
 
             builder.Entity<FavoriteCourseEnrollment>()
                 .HasOne(fc => fc.Course)

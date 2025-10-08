@@ -624,13 +624,6 @@
         ],
         "parameters": [
           {
-            "name": "studentId",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "courseId",
             "in": "query",
             "schema": {
@@ -653,13 +646,6 @@
         ],
         "parameters": [
           {
-            "name": "studentId",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "courseId",
             "in": "query",
             "schema": {
@@ -675,20 +661,10 @@
         }
       }
     },
-    "/api/FavoriteCourses/student/{studentId}": {
+    "/api/FavoriteCourses/all": {
       "get": {
         "tags": [
           "FavoriteCourses"
-        ],
-        "parameters": [
-          {
-            "name": "studentId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -1288,7 +1264,7 @@
       "FavoriteCourseEnrollment": {
         "type": "object",
         "properties": {
-          "studentId": {
+          "userName": {
             "type": "string",
             "nullable": true
           },
@@ -1550,7 +1526,7 @@
         ],
         "type": "object",
         "properties": {
-          "studentId": {
+          "userName": {
             "type": "string",
             "nullable": true
           },
@@ -1578,7 +1554,8 @@
           },
           "cvc": {
             "maxLength": 4,
-            "type": "string"
+            "type": "integer",
+            "format": "int32"
           },
           "student": {
             "$ref": "#/components/schemas/Student"
@@ -1610,8 +1587,8 @@
             "format": "date-time"
           },
           "cvc": {
-            "type": "string",
-            "nullable": true
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

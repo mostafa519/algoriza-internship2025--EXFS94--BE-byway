@@ -31,7 +31,7 @@ namespace ByWay.ServicesLayer.Service.Implementation
             _jwtOptions = jwtOptions;
         }
 
-        public async Task<AuthModel> RegisterAsync(StudentRegisterDto model, string role = "User")
+        public async Task<AuthModel> RegisterAsync(StudentRegisterDto model, string role = "Student")
         {
             var existingUser = await _userManager.FindByEmailAsync(model.Email);
             if (existingUser != null)
@@ -52,7 +52,7 @@ namespace ByWay.ServicesLayer.Service.Implementation
             return await GenerateJwtToken(user, role);
         }
 
-        public async Task<AuthModel> UserLoginAsync(StudentLoginDto model, string role = "User")
+        public async Task<AuthModel> UserLoginAsync(StudentLoginDto model, string role = "Student")
         {
             var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null || !await _userManager.CheckPasswordAsync(user, model.Password))

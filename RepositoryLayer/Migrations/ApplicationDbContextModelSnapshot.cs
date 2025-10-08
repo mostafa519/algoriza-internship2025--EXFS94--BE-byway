@@ -65,21 +65,21 @@ namespace ByWay.RepositoryLayer.Migrations
                         {
                             CourseId = 1,
                             StudentId = "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-                            EnrollmentDate = new DateTime(2025, 10, 8, 18, 4, 25, 902, DateTimeKind.Local).AddTicks(2786),
+                            EnrollmentDate = new DateTime(2025, 10, 8, 19, 58, 14, 760, DateTimeKind.Local).AddTicks(1040),
                             Id = 0
                         },
                         new
                         {
                             CourseId = 2,
                             StudentId = "4fa85f64-5717-4562-b3fc-2c963f66afa7",
-                            EnrollmentDate = new DateTime(2025, 10, 8, 18, 4, 25, 904, DateTimeKind.Local).AddTicks(9980),
+                            EnrollmentDate = new DateTime(2025, 10, 8, 19, 58, 14, 762, DateTimeKind.Local).AddTicks(6740),
                             Id = 0
                         });
                 });
 
             modelBuilder.Entity("ByWay.DomainLayer.Enrollment.FavoriteCourseEnrollment", b =>
                 {
-                    b.Property<string>("StudentId")
+                    b.Property<string>("UserName")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("CourseId")
@@ -88,7 +88,7 @@ namespace ByWay.RepositoryLayer.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("StudentId", "CourseId");
+                    b.HasKey("UserName", "CourseId");
 
                     b.HasIndex("CourseId");
 
@@ -824,7 +824,7 @@ namespace ByWay.RepositoryLayer.Migrations
                             Id = "b2c3d4e5-f6a7-8901-bcde-234567890abc",
                             AccessFailedCount = 0,
                             AccountType = 0,
-                            ConcurrencyStamp = "a9be6b95-4415-4e0f-857f-738c18a85b34",
+                            ConcurrencyStamp = "3667b06d-075f-4a36-bdb5-076185a9fca0",
                             Email = "admin@byway.com",
                             EmailConfirmed = true,
                             EnrollmentDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -833,9 +833,9 @@ namespace ByWay.RepositoryLayer.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@BYWAY.COM",
                             NormalizedUserName = "ADMIN@BYWAY.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBflNhGb+rhocHTycgnULYe0b+g4s42vfCTII3qf0NAAQ6mRGinyGXOBZdULDUNDpA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFX3Ip8FPGY6/zbPtmRJW1eOa2udVxQfZyPDlnVk9HMV34ZUJhrKOX2VSjCoPlxGFw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6c8f5804-80f6-44ff-9ae5-852a512c6aaa",
+                            SecurityStamp = "0de9db8d-f2fc-45f6-ab18-abb8043e9916",
                             TwoFactorEnabled = false,
                             UserName = "admin@byway.com"
                         },
@@ -844,7 +844,7 @@ namespace ByWay.RepositoryLayer.Migrations
                             Id = "3fa85f64-5717-4562-b3fc-2c963f66afa6",
                             AccessFailedCount = 0,
                             AccountType = 1,
-                            ConcurrencyStamp = "6ba0eeaf-e6b0-4794-a2e4-e8cfb1564a1f",
+                            ConcurrencyStamp = "e6280cba-88e0-45e6-9c57-0f77ba69d5e8",
                             Email = "mustafa.ali@example.com",
                             EmailConfirmed = true,
                             EnrollmentDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -853,9 +853,9 @@ namespace ByWay.RepositoryLayer.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "MUSTAFA.ALI@EXAMPLE.COM",
                             NormalizedUserName = "MUSTAFA",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHE3KqRRcqgRj5uaWtTzi5XvgUfxJEkf557ueDIAWgUPhYFSky0jNdFiQr32Of+ufw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOgBD2mOkmTZGa7IzTV8p/PdPmQLjsubCooN8Dkxzzq9Ve3b1P5FCFeEryhvs5gJBA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d575c514-705c-4a6c-8478-fde9d569a15f",
+                            SecurityStamp = "fe9f3047-2c03-40aa-a834-53f051dee192",
                             TwoFactorEnabled = false,
                             UserName = "mustafa"
                         },
@@ -864,7 +864,7 @@ namespace ByWay.RepositoryLayer.Migrations
                             Id = "4fa85f64-5717-4562-b3fc-2c963f66afa7",
                             AccessFailedCount = 0,
                             AccountType = 1,
-                            ConcurrencyStamp = "7c02d7a1-3b78-49ef-9a13-e93fa9570afd",
+                            ConcurrencyStamp = "7729ac8d-c3ed-459b-93ac-44e6c1c03854",
                             Email = "john.doe@example.com",
                             EmailConfirmed = true,
                             EnrollmentDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -873,9 +873,9 @@ namespace ByWay.RepositoryLayer.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "JOHN.DOE@EXAMPLE.COM",
                             NormalizedUserName = "JOHNDOE",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHreSNwXUd172oJsHXKD2wpHIkgXzqCsyRg09FirzZ2vfsiXSl+m7OQ+TMbHGzD6lw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENWG2DwTEX6x5XnJSw9JaCYPgyydBygGieYsuq9z/XpVYWjq7hZcpD+TxRXZcbJZSw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2f385b62-b382-4b33-9f52-6be83671fc6a",
+                            SecurityStamp = "d84d7d9d-eb19-4611-9482-449181198bf4",
                             TwoFactorEnabled = false,
                             UserName = "johndoe"
                         });
@@ -883,13 +883,12 @@ namespace ByWay.RepositoryLayer.Migrations
 
             modelBuilder.Entity("ByWay.DomainLayer.Model.StudentProfile", b =>
                 {
-                    b.Property<string>("StudentId")
+                    b.Property<string>("UserName")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("CVC")
-                        .IsRequired()
+                    b.Property<int>("CVC")
                         .HasMaxLength(4)
-                        .HasColumnType("nvarchar(4)");
+                        .HasColumnType("int");
 
                     b.Property<string>("CardName")
                         .IsRequired()
@@ -913,7 +912,7 @@ namespace ByWay.RepositoryLayer.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("StudentId");
+                    b.HasKey("UserName");
 
                     b.ToTable("StudentProfiles");
                 });
@@ -1130,7 +1129,7 @@ namespace ByWay.RepositoryLayer.Migrations
 
                     b.HasOne("ByWay.DomainLayer.Model.Student", "Student")
                         .WithMany("StudentFavoriteCourses")
-                        .HasForeignKey("StudentId")
+                        .HasForeignKey("UserName")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1200,7 +1199,7 @@ namespace ByWay.RepositoryLayer.Migrations
                 {
                     b.HasOne("ByWay.DomainLayer.Model.Student", "Student")
                         .WithOne("Profile")
-                        .HasForeignKey("ByWay.DomainLayer.Model.StudentProfile", "StudentId")
+                        .HasForeignKey("ByWay.DomainLayer.Model.StudentProfile", "UserName")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

@@ -40,13 +40,13 @@ namespace ByWay_API.Controllers
         [Authorize(Roles = "Student")]
         public async Task<IActionResult> AddOrUpdateProfile([FromBody] StudentProfileDto model)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (string.IsNullOrEmpty(userId))
+            var username = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(username))
                 return Unauthorized();
 
             var profile = new StudentProfile
             {
-                StudentId = userId,
+                UserName = username,
                 Country = model.Country,
                 State = model.State,
                 CardName = model.CardName,

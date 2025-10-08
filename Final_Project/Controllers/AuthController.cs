@@ -33,7 +33,7 @@ public class AuthController : ControllerBase
         if (string.IsNullOrWhiteSpace(model.UserName))
             model.UserName = "User" + Guid.NewGuid().ToString("N").Substring(0, 6);
 
-        var result = await _authService.RegisterAsync(model, role: "User");
+        var result = await _authService.RegisterAsync(model, role: "Student");
 
         if (!result.IsAuthenticated)
             return BadRequest(new { message = result.Message });
@@ -59,7 +59,7 @@ public class AuthController : ControllerBase
     [HttpPost("user-login")]
     public async Task<IActionResult> UserLogin([FromBody] StudentLoginDto model)
     {
-        var result = await _authService.UserLoginAsync(model, role: "User");
+        var result = await _authService.UserLoginAsync(model, role: "Student");
         if (!result.IsAuthenticated)
             return Unauthorized(new { message = result.Message });
 

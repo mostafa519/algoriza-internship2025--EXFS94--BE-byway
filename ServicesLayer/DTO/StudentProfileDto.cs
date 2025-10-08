@@ -14,7 +14,7 @@ namespace ByWay.ServicesLayer.DTO
         public string CardName { get; set; } = string.Empty;
         public string CardNumber { get; set; } = string.Empty;
         public DateTime ExpiryDate { get; set; }
-        public string CVC { get; set; } = string.Empty;
+        public int CVC { get; set; } 
     }
 
 }

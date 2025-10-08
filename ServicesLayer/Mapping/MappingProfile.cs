@@ -20,7 +20,6 @@ namespace ByWay.ServicesLayer.Mapping
                     CardName = src.CardName,
                     CardNumber = src.CardNumber,
                     ExpiryDate = src.ExpiryDate,
-                    CVC = src.CVC
                 }));
 
             CreateMap<Student, StudentDto>()

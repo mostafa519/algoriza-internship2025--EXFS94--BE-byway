@@ -383,16 +383,21 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "studentId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "courseId",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ByWay_API.Controllers.FavoriteCoursesController",
+    "Method": "GetFavorites",
+    "RelativePath": "api/FavoriteCourses/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -404,30 +409,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "studentId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "courseId",
         "Type": "System.Int32",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ByWay_API.Controllers.FavoriteCoursesController",
-    "Method": "GetFavorites",
-    "RelativePath": "api/FavoriteCourses/student/{studentId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "studentId",
-        "Type": "System.String",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []

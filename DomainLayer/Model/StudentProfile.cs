@@ -12,7 +12,7 @@ namespace ByWay.DomainLayer.Model
     { 
         [Key]
         [ForeignKey("Student")]
-        public string StudentId { get; set; }
+        public string UserName { get; set; }
 
         // =================== Location ===================
         [MaxLength(100)]
@@ -30,7 +30,7 @@ namespace ByWay.DomainLayer.Model
         public DateTime ExpiryDate { get; set; }
 
         [Required, MaxLength(4)]
-        public string CVC { get; set; } = string.Empty; 
+        public int CVC { get; set; }  
         public Student Student { get; set; }
     }
 }
