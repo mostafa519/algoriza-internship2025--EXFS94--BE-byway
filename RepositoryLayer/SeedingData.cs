@@ -41,7 +41,7 @@ namespace YourProject.Context
                 LastName = "Admin",
                 AccountType = AccountType.Admin
             };
-            admin.PasswordHash = passwordHasher.HashPassword(admin, "Admin@2584");
+            admin.PasswordHash = passwordHasher.HashPassword(admin, "admin1234");
 
             var student1 = new Student
             {
