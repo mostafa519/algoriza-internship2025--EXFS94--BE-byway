@@ -1,6 +1,22 @@
 [
   {
-    "ContainingType": "ByWay_API.Controllers.AuthController",
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_13",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthController",
     "Method": "AdminLogin",
     "RelativePath": "api/Auth/admin-login",
     "HttpMethod": "POST",
@@ -16,7 +32,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ByWay_API.Controllers.AuthController",
+    "ContainingType": "AuthController",
     "Method": "RegisterAsync",
     "RelativePath": "api/Auth/register",
     "HttpMethod": "POST",
@@ -27,17 +43,12 @@
         "Name": "model",
         "Type": "ByWay.ServicesLayer.DTO.StudentRegisterDto",
         "IsRequired": true
-      },
-      {
-        "Name": "role",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ByWay_API.Controllers.AuthController",
+    "ContainingType": "AuthController",
     "Method": "GetAllStudents",
     "RelativePath": "api/Auth/students",
     "HttpMethod": "GET",
@@ -47,9 +58,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ByWay_API.Controllers.AuthController",
+    "ContainingType": "AuthController",
     "Method": "UserLogin",
-    "RelativePath": "api/Auth/userlogin",
+    "RelativePath": "api/Auth/user-login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -58,11 +69,6 @@
         "Name": "model",
         "Type": "ByWay.ServicesLayer.DTO.StudentLoginDto",
         "IsRequired": true
-      },
-      {
-        "Name": "role",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []

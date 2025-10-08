@@ -25,14 +25,11 @@ namespace ByWay_API.Controllers
         }
 
         [HttpPost("add")]
-        public async Task<IActionResult> Add(string studentId, int courseId)
+        public async Task<IActionResult> Add( int courseId)
         {
-            // Check if the student exists
-            var student = await _userManager.FindByIdAsync(studentId);
-            if (student == null)
-                return BadRequest("Student must be LogIn or registered before adding favorites.");
+            
 
-            var result = await _favoriteService.AddFavoriteAsync(studentId, courseId);
+            var result = await _favoriteService.AddFavoriteAsync( courseId);
             if (result == null)
                 return BadRequest("Course already in favorites");
 
@@ -40,19 +37,13 @@ namespace ByWay_API.Controllers
         }
 
         [HttpDelete("remove")]
-        public async Task<IActionResult> Remove(string studentId, int courseId)
+        public async Task<IActionResult> Remove(int courseId)
         {
-            var removed = await _favoriteService.RemoveFavoriteAsync(studentId, courseId);
+            var removed = await _favoriteService.RemoveFavoriteAsync(courseId);
             if (!removed) return NotFound("Course not found in favorites");
             return Ok("Removed successfully");
         }
-
-        [HttpGet("student/{studentId}")]
-        public async Task<IActionResult> GetFavorites(string studentId)
-        {
-            var favorites = await _favoriteService.GetUserFavoritesAsync(studentId);
-            return Ok(favorites);
-        }
+ 
     }
 }
  

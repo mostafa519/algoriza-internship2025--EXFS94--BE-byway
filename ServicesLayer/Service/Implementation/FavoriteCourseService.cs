@@ -20,16 +20,15 @@ namespace ByWay.ServicesLayer.Service.Implementation
             _context = context;
         }
 
-        public async Task<FavoriteCourseEnrollment> AddFavoriteAsync(string studentId, int courseId)
+        public async Task<FavoriteCourseEnrollment> AddFavoriteAsync( int courseId)
         {
             var exists = await _context.FavoriteCourseEnrollments
-                .AnyAsync(fc => fc.StudentId == studentId && fc.CourseId == courseId);
+                .AnyAsync(fc =>  fc.CourseId == courseId);
 
             if (exists) return null; // Already exists
 
             var favorite = new FavoriteCourseEnrollment
-            {
-                StudentId = studentId,
+            { 
                 CourseId = courseId,
                 CreatedAt = System.DateTime.UtcNow
             };
@@ -40,10 +39,10 @@ namespace ByWay.ServicesLayer.Service.Implementation
             return favorite;
         }
 
-        public async Task<bool> RemoveFavoriteAsync(string studentId, int courseId)
+        public async Task<bool> RemoveFavoriteAsync( int courseId)
         {
             var favorite = await _context.FavoriteCourseEnrollments
-                .FirstOrDefaultAsync(fc => fc.StudentId == studentId && fc.CourseId == courseId);
+                .FirstOrDefaultAsync(fc =>  fc.CourseId == courseId);
 
             if (favorite == null) return false;
 
@@ -52,13 +51,6 @@ namespace ByWay.ServicesLayer.Service.Implementation
             return true;
         }
 
-        public async Task<List<Course>> GetUserFavoritesAsync(string studentId)
-        {
-            return await _context.FavoriteCourseEnrollments
-                .Where(fc => fc.StudentId == studentId)
-                .Include(fc => fc.Course)
-                .Select(fc => fc.Course)
-                .ToListAsync();
-        }
+        
     }
 }

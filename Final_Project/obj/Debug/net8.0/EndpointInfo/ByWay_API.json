@@ -11,18 +11,13 @@
         "tags": [
           "Auth"
         ],
-        "parameters": [
-          {
-            "name": "role",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "default": "Student"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentRegisterDto"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/StudentRegisterDto"
@@ -54,6 +49,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentLoginDto"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/StudentLoginDto"
@@ -78,23 +78,18 @@
         }
       }
     },
-    "/api/Auth/userlogin": {
+    "/api/Auth/user-login": {
       "post": {
         "tags": [
           "Auth"
         ],
-        "parameters": [
-          {
-            "name": "role",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "default": "Student"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentLoginDto"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/StudentLoginDto"
@@ -123,6 +118,18 @@
       "get": {
         "tags": [
           "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "ByWay_API"
         ],
         "responses": {
           "200": {
@@ -220,6 +227,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCourseDto"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/UpdateCourseDto"
@@ -1051,6 +1063,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentProfileDto"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/StudentProfileDto"
@@ -1643,7 +1660,7 @@
           },
           "expiryDate": {
             "type": "string",
-            "nullable": true
+            "format": "date-time"
           },
           "cvc": {
             "type": "string",

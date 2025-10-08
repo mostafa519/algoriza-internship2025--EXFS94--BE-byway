@@ -51,8 +51,6 @@ namespace ByWay.ServicesLayer.Service.Implementation
         public async Task<CourseDto?> GetCourseByName(string name)
         {
             var course = await _context.Courses
-                .Include(c => c.Category)
-                .Include(c => c.Instructor)
                 .FirstOrDefaultAsync(c => c.Name.Contains(name));
 
             return course == null ? null : _mapper.Map<CourseDto>(course);
@@ -74,8 +72,6 @@ namespace ByWay.ServicesLayer.Service.Implementation
         public async Task<IEnumerable<CourseDto>> GetCoursesByDuration(int duration)
         {
             var courses = await _context.Courses
-                .Include(c => c.Category)
-                .Include(c => c.Instructor)
                 .Where(c => c.DurationInHours == duration)
                 .ToListAsync();
 
@@ -86,8 +82,6 @@ namespace ByWay.ServicesLayer.Service.Implementation
         public async Task<IEnumerable<CourseDto>> GetCoursesByCategory(string category)
         {
             var courses = await _context.Courses
-                .Include(c => c.Category)
-                .Include(c => c.Instructor)
                 .Where(c => c.Category != null && c.Category.Name.Contains(category))
                 .ToListAsync();
 
@@ -98,8 +92,6 @@ namespace ByWay.ServicesLayer.Service.Implementation
         public async Task<IEnumerable<CourseDto>> GetCoursesByRate(double rate)
         {
             var courses = await _context.Courses
-                .Include(c => c.Category)
-                .Include(c => c.Instructor)
                 .Where(c => c.Rate == rate)
                 .ToListAsync();
 
@@ -110,8 +102,6 @@ namespace ByWay.ServicesLayer.Service.Implementation
         public async Task<IEnumerable<CourseDto>> GetCoursesByLevel(string level)
         {
             var courses = await _context.Courses
-                .Include(c => c.Category)
-                .Include(c => c.Instructor)
                 .Where(c => c.Level == level)
                 .ToListAsync();
 
